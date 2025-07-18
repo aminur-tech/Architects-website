@@ -8,7 +8,7 @@
   font-style: normal;
 }
 /* background-color */
-.primary-color{
+.btn-color{
     background-color: #FF900E;
 }
 
@@ -17,52 +17,69 @@
 .dark-1{
     color:#131313 ;
 }
+.dark-2{
+    color: #424242;
+}
 .dark-3{
     color: #727272;
 }
 
 header{
-    background-color: #ff8f0e23;
-    padding: 20px 120px;
+    background-color: rgba(255, 144, 14, 0.1);
    
+}
+.navbar , .banner{
+    max-width: 1270px;
+    margin: 0 auto;
 }
 
+
 /* nav section */
-nav{
+.navbar{
     display: flex;
     justify-content: space-between;
+    align-items: center;
    
 }
-nav ul{
+.nav-links{
     display: flex;
     gap: 30px;
 }
-nav li{
-    list-style: none
+
+ .nav-links li{
+    list-style: none;
 }
-nav li a{
+.nav-links a{
 text-decoration: none;
+font-size: 1rem;
+}
+.navbar h3{
+    font-size: 2rem;
 }
 
-/* hero-section */
+
+
+/* banner-section */
 .banner{
     text-align: center;
 }
+.banner-container{
+    margin: 0 auto;
+    max-width: 850px;
+}
 .banner h1{
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: bold;
 }
 .banner p{
-    font-size: 16px;
+    font-size: 1rem;
 }
 .banner button{
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px 25px;
+    border-radius: 8px;
     margin-bottom: 30px;
     border: none;
-    width: 180px;
-    height: 64px;
-    font-size: 20;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #fff;
 }
@@ -70,3 +87,74 @@ text-decoration: none;
     max-width: 100%;
 
 }
+
+/* features section */
+main{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+main > section{
+    margin-top: 130px;
+     
+}
+
+.features{
+    display: flex;
+    align-items: center; 
+   
+}
+.our-team{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 24px;
+}
+.our-team img{
+    border-radius: 8px;
+}
+.features-container{
+    margin-left: 100px;
+    max-width: 530px;
+}
+.features-container h3{
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.box-1{
+    color: #FF900E;
+}
+.features-container p{
+    font-size: 1rem;
+}
+.features-container button{
+    padding: 20px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+
+@media screen and (max-width:575px) {
+    .navbar , 
+    .nav-links,
+    .features
+    {
+        flex-direction: column;
+    }
+
+    .features-container{
+        margin-left: 20px;
+    }
+
+
+    .our-team{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    
+}
+
