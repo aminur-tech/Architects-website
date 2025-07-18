@@ -103,12 +103,12 @@ main > section{
     align-items: center; 
    
 }
-.our-team{
+.teams{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 24px;
 }
-.our-team img{
+.teams img{
     border-radius: 8px;
 }
 .features-container{
@@ -132,6 +132,54 @@ main > section{
     border: none;
     font-size: 1.25rem;
     font-weight: 600;
+    color: #fff;
+}
+
+/* feature related section */
+.feature-section{
+    display: flex;
+    gap: 150px;
+
+}
+.feature-item .feature-title{
+    border-left:2px solid #FF900E ;
+    font-size: 2.8rem;
+    padding-left: 20px;
+}
+.feature-item p{
+    font-size: 1rem;
+}
+
+.feature-img{
+    width: 100%;
+}
+
+.card-item{
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+}
+.card-item h4{
+font-size: 1.25rem;
+}
+.card-item p{
+    font-size: 1rem;
+}
+
+#experience-budge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+    border: none;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
     color: #fff;
 }
 
@@ -195,17 +243,32 @@ main > section{
     grid-template-columns: repeat(5, 1fr);
     justify-items: center;
     margin-top: 50px;
+    margin-bottom: 100px;
+    
    }
    .sponsors-company img{
     filter: grayscale(100%);
    }
+
+   footer{
+    max-width: 1270px;
+    max-height: 100px;
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+   }
+   
 
 
 
 @media screen and (max-width:575px) {
     .navbar , 
     .nav-links,
-    .features
+    .features, 
+    .feature-section
     {
         flex-direction: column;
     }
@@ -215,7 +278,7 @@ main > section{
     }
 
 
-    .our-team, .fact-card,.sponsors-company{
+    .teams, .fact-card,.sponsors-company{
         grid-template-columns: repeat(1, 1fr);
 
     }
@@ -228,10 +291,14 @@ main > section{
     .sponsors-company{
         gap: 25px;
     }
+    #experience-budge{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
     
 }
 @media screen and (min-width:576px) and (max-width:992px) {
-    .features{
+    .features, .feature-section{
         flex-direction: column;
     }
     .features-container{
@@ -251,6 +318,11 @@ main > section{
     .sponsors-company{
          grid-template-columns: repeat(3, 1fr);
         gap: 20px;
+    }
+
+     #experience-budge{
+        margin-top: 10px;
+        margin-left: 10px;
     }
 
 }
