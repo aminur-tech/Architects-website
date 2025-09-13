@@ -246,8 +246,6 @@ font-size: 1.25rem;
 
 
 @media screen and (max-width:575px) {
-    .navbar , 
-    .nav-links,
     .features, 
     .feature-section
     {
@@ -288,6 +286,7 @@ font-size: 1.25rem;
 
     .facts{
         justify-items: center;
+        
     }
 
     .fact-card{
